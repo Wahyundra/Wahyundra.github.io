@@ -205,6 +205,7 @@ h5 {
     background: #d3d3d3;
     margin-bottom: 25px;
     color: black;
+
 }
 .Portfolio h2 {
     font-size: 2.5rem;
@@ -267,6 +268,7 @@ h5 {
     flex-direction: column;
     box-sizing: border-box;
     padding: 20px ;
+    z-index: 100;
 }
 .form{
     display: flex;
@@ -365,6 +367,27 @@ footer {
     .send{
         width: 20%;
     }
+
+    .portfolio-slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .portfolio-item {
+        display: none;
+        width: 350px;
+        text-align: center;
+        transition: opacity 0.5s ease-in-out;
+        transition: transform 0.3s ease;
+      }
+      
+      .portfolio-item.active {
+        display: block;
+        opacity: 1;
+    }
 }
 
 
@@ -386,4 +409,5 @@ footer {
     .card{
         flex-direction: column;
     }
+    
 }
