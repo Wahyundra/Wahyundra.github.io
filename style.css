@@ -124,7 +124,7 @@ span{
     margin-top: 3rem;
     justify-content: center;
     align-items: center;
-    min-height: 400px;
+    margin-left: 70px;
 }
 .card {
     height: auto;
@@ -283,6 +283,7 @@ h5 {
     outline: none;
     background: black;
     border-radius: 15px;
+    color: white;
 }
 #msg{
     padding: 10px;
@@ -292,6 +293,7 @@ h5 {
     outline: none;
     background: black;
     border-radius: 15px;
+    color: white;
 }
 #send{
     padding: 10px;
