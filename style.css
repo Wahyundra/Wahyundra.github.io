@@ -409,5 +409,25 @@ footer {
     .card{
         flex-direction: column;
     }
+      .portfolio-slider {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .portfolio-item {
+        display: none;
+        width: 350px;
+        text-align: center;
+        transition: opacity 0.5s ease-in-out;
+        transition: transform 0.3s ease;
+      }
+      
+      .portfolio-item.active {
+        display: block;
+        opacity: 1;
+    }
     
 }
