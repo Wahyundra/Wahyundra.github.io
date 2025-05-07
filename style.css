@@ -76,14 +76,6 @@ html{
 span{
     color: #6ccb8b;
 }
-/* .btn{
-    padding: 10px 35px;
-    background-color: transparent;
-    border: 1px solid green;
-    color: white;
-    outline: none;
-    transition: .6s ease;
-} */
 .btn:hover{
     cursor: pointer;
     background-color: green;
@@ -125,15 +117,11 @@ span{
     width: 100%;
     padding: 100px 0;
 }
-/* .title h2 {
-    color: black;
-    font-size: 50px;
-    width: 1130px;
-    text-align: center;
-    margin: auto;
-} */
 .boxisi {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
     justify-content: center;
     align-items: center;
     min-height: 400px;
@@ -184,7 +172,10 @@ h5 {
     padding: 20px;
 }
 .row{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 .box{
     display: flex;
@@ -341,16 +332,14 @@ footer {
 }
 
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .navbar ul{
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .heading{
         font-size: 2.5rem;
     }
-    
     .pic{
         flex-direction: column;
         align-items: center;
@@ -363,7 +352,6 @@ footer {
         text-align: center;
         padding: 10px;
     }
-    
     .input{
         width: 60%;
     }
@@ -373,17 +361,16 @@ footer {
     .send{
         width: 20%;
     }
-} */
+}
 
 
-/* @media only screen and (max-width: 530pxpx) {
+@media only screen and (max-width: 530pxpx) {
     #beranda{
         height: 820px;
     }
     .heading{
         font-size: 1.7rem;
     }
-    
     .pic img{
         width: 300px;
         height: 175px;
@@ -394,18 +381,4 @@ footer {
     .card{
         flex-direction: column;
     }
-    
-    .row{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
-    }
-    
-    .boxisi{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 3rem;
-    }
-} */
+}
